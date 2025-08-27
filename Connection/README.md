@@ -1,4 +1,5 @@
 # Mirrors
+## Debian Mirrors
 ```
 #deb cdrom:[Debian GNU/Linux 12.9.0 _Bookworm_ - Official amd64 DVD Binary-1 with firmware 20250111-10:55]/ bookworm contrib main non-free-firmware
 
@@ -21,10 +22,21 @@ deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-fr
 # deb http://ftp.de.debian.org/debian bookworm main contrib non-free non-free-firmware
 
 ```
+## Kali Mirrors
+```
+# See https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
+deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+
+# Additional line for source packages
+deb-src http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+```
+---
+
+## Update them
 ```
 sudo apt update
 ```
-
+---
 # Set Dns
 ```
 sudo nano /etc/resolv.conf 
